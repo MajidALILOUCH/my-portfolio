@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Majid Alilouch is a Front-end developer who design and build websites that look good, and work well."
+    />
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <title>Majid Alilouch</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- normalize  -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- start header -->
+    <header>
+      <a href="index.html" class="logo"
+        ><img src="images/logo.png" alt="logo" />
+      </a>
+      <nav>
+        <div class="overlay"></div>
+        <ul>
+          <i class="close fa-solid fa-x"></i>
+          <li><a class="link active" href="#home">home</a></li>
+          <li><a class="link" href="#about">about</a></li>
+          <li><a class="link" href="#skills">skills</a></li>
+          <li><a class="link" href="#work">my work</a></li>
+          <li><a class="link" href="#contact">contact</a></li>
+          <li>
+            <a class="main-btn" href="#">Resume</a>
+          </li>
+        </ul>
+        <button
+          id="light-mode-toggle"
+          class="light-mode-toggle"
+          aria-label="toggle dark mode"
+        >
+          <svg
+            class="sun-icon icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-sun"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+            />
+          </svg>
+          <svg
+            class="moon-icon icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-moon"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"
+            />
+          </svg>
+        </button>
+        <i class="toggle fa-solid fa-bars"></i>
+      </nav>
+    </header>
+    <!-- end header -->
+    <!-- start links and nav buttons -->
+    <div class="links">
+      <ul>
+        <li>
+          <a
+            href="https://github.com/MajidALILOUCH"
+            target="_blank"
+            aria-label="visit majid's github"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/Majid_Alilouch"
+            target="_blank"
+            aria-label="visit majid's twitter"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/majid-alilouch/"
+            target="_blank"
+            aria-label="visit majid's linkedin"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </li>
+      </ul>
+      <div></div>
+    </div>
+    <div class="nav-buttons">
+      <button class="active" aria-label="go to home section"></button>
+      <button aria-label="go to about section"></button>
+      <button aria-label="go to skills section"></button>
+      <button aria-label="go to work section"></button>
+      <button aria-label="go to contact section"></button>
+      <div></div>
+    </div>
+    <!-- end links and nav buttons -->
+    <!-- start content -->
+    <div class="content">
+      <main>
+        <!-- start hero -->
+        <section class="home" id="home">
+          <div class="text">
+            <span>Hello! 👋 My name is</span>
+            <h1>Majid Alilouch</h1>
+            <h2>Front-end Developer</h2>
+            <p>I design and build websites that look good, and work well.</p>
+            <a href="#work" class="main-btn">See My Work</a>
+          </div>
+        </section>
+        <!-- end hero -->
+        <!-- start about  -->
+        <section class="about" id="about">
+          <h2 class="main-title">about</h2>
+          <div class="about-content">
+            <div class="text">
+              <p>
+                Hello! I'm Majid and I'm a frontend developer, designer from
+                Tetuan, Morocco.
+              </p>
+              <p>
+                After building my first website, I knew I wanted to work with
+                computers and technology, and I've never looked back.
+              </p>
+              <p>
+                In recent years, I've been focused on programming, building a
+                solid frontend stack and creating exciting projects that solve
+                real-world problems.
+              </p>
+              <p>
+                Take a look at my work below to see what I'm working on, and get
+                in touch if you'd like to work together!
+              </p>
+            </div>
+            <div class="image">
+              <img src="images/personal img.png" alt="my personal img" />
+            </div>
+          </div>
+        </section>
+        <!-- end about -->
+        <!-- start skills -->
+        <section class="skills" id="skills">
+          <h2 class="main-title">skills</h2>
+          <div class="icons">
+            <div class="icon">
+              <img src="images/skills/html.svg" alt="svg icon" />
+            </div>
+            <div class="icon">
+              <img src="images/skills/css.svg" alt="svg icon" />
+            </div>
+            <div class="icon">
+              <img src="images/skills/javascript.svg" alt="svg icon" />
+            </div>
+            <div class="icon">
+              <img src="images/skills/git.svg" alt="svg icon" />
+            </div>
+            <div class="icon">
+              <img src="images/skills/github.svg" alt="svg icon" />
+            </div>
+            <div class="icon">
+              <img src="images/skills/sass.svg" alt="svg icon" />
+            </div>
+            <div class="icon">
+              <img src="images/skills/npm.svg" alt="svg icon" />
+            </div>
+            <div class="icon">
+              <img src="images/skills/react.svg" alt="svg icon" />
+            </div>
+            <div class="icon">
+              <img src="images/skills/tailwind.svg" alt="svg icon" />
+            </div>
+            <div class="icon">
+              <img src="images/skills/jest.svg" alt="svg icon" />
+            </div>
+          </div>
+        </section>
+        <!-- end skills -->
+        <!-- start work -->
+        <section class="work" id="work">
+          <h2 class="main-title">my work</h2>
+          <div class="projects">
+            <div class="project">
+              <div class="image">
+                <img src="images/projects/Dashboard.png" alt="project" />
+              </div>
+              <div class="info">
+                <p>Featured Project</p>
+                <h3>dashboard</h3>
+                <div class="tecnologies">
+                  <img src="images/skills/html.svg" alt="tec" />
+                  <img src="images/skills/css.svg" alt="tec" />
+                  <img src="images/skills/javascript.svg" alt="tec" />
+                </div>
+                <p class="description">
+                  Dynamic and intuitive dashboard presenting crucial information
+                  with a user-friendly interface for quick insights.
+                </p>
+                <div class="project-links">
+                  <a
+                    class="second-btn"
+                    href="https://github.com/MajidALILOUCH/dashboard"
+                    target="_blank"
+                    aria-label="visit project source on github"
+                    ><i class="fa-brands fa-github"></i><span>source</span></a
+                  >
+                  <a
+                    class="second-btn"
+                    href="https://majidalilouch.github.io/Dashboard/"
+                    target="_blank"
+                    aria-label="visit project live demo"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                    ><span>live</span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project">
+              <div class="image">
+                <img src="images/projects/Booth.png" alt="project" />
+              </div>
+              <div class="info">
+                <p>Featured Project</p>
+                <h3>Booth</h3>
+                <div class="tecnologies">
+                  <img src="images/skills/html.svg" alt="tec" />
+                  <img src="images/skills/css.svg" alt="tec" />
+                  <img src="images/skills/javascript.svg" alt="tec" />
+                </div>
+                <p class="description">
+                  A landing page of an innovative mobile app, showcasing its
+                  powerful features and seamless user experience.
+                </p>
+                <div class="project-links">
+                  <a
+                    class="second-btn"
+                    href="https://github.com/MajidALILOUCH/booth"
+                    target="_blank"
+                    aria-label="visit project source on github"
+                    ><i class="fa-brands fa-github"></i><span>source</span></a
+                  >
+                  <a
+                    class="second-btn"
+                    href="https://majidalilouch.github.io/Booth/"
+                    target="_blank"
+                    aria-label="visit project live demo"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                    ><span>live</span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project">
+              <div class="image">
+                <img src="images/projects/elzero.png" alt="project" />
+              </div>
+              <div class="info">
+                <p>Featured Project</p>
+                <h3>Elzero</h3>
+                <div class="tecnologies">
+                  <img src="images/skills/html.svg" alt="tec" />
+                  <img src="images/skills/css.svg" alt="tec" />
+                  <img src="images/skills/javascript.svg" alt="tec" />
+                </div>
+                <p class="description">
+                  Welcome to Elzero World, your gateway to my life's adventures,
+                  including books, games, stories, and events.
+                </p>
+                <div class="project-links">
+                  <a
+                    class="second-btn"
+                    href="https://github.com/MajidALILOUCH/elzero"
+                    target="_blank"
+                    aria-label="visit project source on github"
+                    ><i class="fa-brands fa-github"></i><span>source</span></a
+                  >
+                  <a
+                    class="second-btn"
+                    href="https://majidalilouch.github.io/Elzero/"
+                    target="_blank"
+                    aria-label="visit project live demo"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                    ><span>live</span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end work -->
+        <!-- start other projects -->
+        <section class="other-projects">
+          <h2>other noteworthy projects</h2>
+          <a href="#" class="archive-link">view the archive</a>
+          <div class="projects-grid">
+            <div class="project">
+              <div class="head">
+                <div class="project-top">
+                  <i class="fa-regular fa-folder"></i>
+                  <div class="project-links">
+                    <a
+                      class="second-btn"
+                      href="https://github.com/MajidALILOUCH/Front-end-Mini-Projects/tree/main/016%20-%20Create%20Typing%20Speed%20Test%20Game"
+                      target="_blank"
+                      aria-label="visit project source on github"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a
+                      class="second-btn"
+                      href="https://codepen.io/majid_alilouch/full/WNgqRvZ"
+                      target="_blank"
+                      aria-label="visit project live demo"
+                      ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                    ></a>
+                  </div>
+                </div>
+                <h3 class="project-title">typing speed game</h3>
+                <p class="project-description">
+                  A typing speed game challenges players to type words or
+                  sentences quickly and accurately to test their typing skills.
+                </p>
+              </div>
+              <div class="foot">
+                <ul>
+                  <li>html</li>
+                  <li>css</li>
+                  <li>javascript</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project">
+              <div class="head">
+                <div class="project-top">
+                  <i class="fa-regular fa-folder"></i>
+                  <div class="project-links">
+                    <a
+                      class="second-btn"
+                      href="https://github.com/MajidALILOUCH/Front-end-Mini-Projects/tree/main/018%20-%20Memory%20Game"
+                      target="_blank"
+                      aria-label="visit project source on github"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a
+                      class="second-btn"
+                      href="https://codepen.io/majid_alilouch/full/BaqaKqE"
+                      target="_blank"
+                      aria-label="visit project live demo"
+                      ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                    ></a>
+                  </div>
+                </div>
+                <h3 class="project-title">memory game</h3>
+                <p class="project-description">
+                  A memory game is a matching activity where you flip cards to
+                  find pairs and test your memory skills.
+                </p>
+              </div>
+              <div class="foot">
+                <ul>
+                  <li>html</li>
+                  <li>css</li>
+                  <li>javascript</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project">
+              <div class="head">
+                <div class="project-top">
+                  <i class="fa-regular fa-folder"></i>
+                  <div class="project-links">
+                    <a
+                      class="second-btn"
+                      href="https://github.com/MajidALILOUCH/Front-end-Mini-Projects/tree/main/014%20-%20Fetch%20GitHub%20Repositories%20With%20Fetch%20API"
+                      target="_blank"
+                      aria-label="visit project source on github"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a
+                      class="second-btn"
+                      href="https://codepen.io/majid_alilouch/full/xxaogbe"
+                      target="_blank"
+                      aria-label="visit project live demo"
+                      ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                    ></a>
+                  </div>
+                </div>
+                <h3 class="project-title">fetch github repositories</h3>
+                <p class="project-description">
+                  A simple project utilizing the Fetch API to fetch GitHub
+                  repositories, displaying relevant information and details
+                  about each repository.
+                </p>
+              </div>
+              <div class="foot">
+                <ul>
+                  <li>html</li>
+                  <li>css</li>
+                  <li>javascript</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project">
+              <div class="head">
+                <div class="project-top">
+                  <i class="fa-regular fa-folder"></i>
+                  <div class="project-links">
+                    <a
+                      class="second-btn"
+                      href="https://github.com/MajidALILOUCH/Front-end-Mini-Projects/tree/main/015%20-%20To-Do%20App%20With%20Local%20Storage"
+                      target="_blank"
+                      aria-label="visit project source on github"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a
+                      class="second-btn"
+                      href="https://codepen.io/majid_alilouch/full/gOdNgpw"
+                      target="_blank"
+                      aria-label="visit project live demo"
+                      ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                    ></a>
+                  </div>
+                </div>
+                <h3 class="project-title">To-Do App With Local Storage</h3>
+                <p class="project-description">
+                  A To-Do app with local storage: create, manage, and persist
+                  tasks locally. Add, complete, and delete tasks without relying
+                  on external servers.
+                </p>
+              </div>
+              <div class="foot">
+                <ul>
+                  <li>html</li>
+                  <li>css</li>
+                  <li>javascript</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project">
+              <div class="head">
+                <div class="project-top">
+                  <i class="fa-regular fa-folder"></i>
+                  <div class="project-links">
+                    <a
+                      class="second-btn"
+                      href="https://github.com/MajidALILOUCH/kasper"
+                      target="_blank"
+                      aria-label="visit project source on github"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a
+                      class="second-btn"
+                      href="https://majidalilouch.github.io/Kasper/"
+                      target="_blank"
+                      aria-label="visit project live demo"
+                      ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                    ></a>
+                  </div>
+                </div>
+                <h3 class="project-title">kasper</h3>
+                <p class="project-description">
+                  A creative team sharing their art with the world through their
+                  website. Passionate creators making a visual impact.
+                </p>
+              </div>
+              <div class="foot">
+                <ul>
+                  <li>html</li>
+                  <li>css</li>
+                  <li>javascript</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project">
+              <div class="head">
+                <div class="project-top">
+                  <i class="fa-regular fa-folder"></i>
+                  <div class="project-links">
+                    <a
+                      class="second-btn"
+                      href="https://github.com/MajidALILOUCH/shaif-s-Cuisine"
+                      target="_blank"
+                      aria-label="visit project source on github"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a
+                      class="second-btn"
+                      href="https://majidalilouch.github.io/shaif-s-Cuisine/"
+                      target="_blank"
+                      aria-label="visit project live demo"
+                      ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                    ></a>
+                  </div>
+                </div>
+                <h3 class="project-title">shaif's cuisine</h3>
+                <p class="project-description">
+                  A multi-cuisine restaurant that offers a diverse range of
+                  culinary experiences in a relaxed and upscale dining
+                  atmosphere.
+                </p>
+              </div>
+              <div class="foot">
+                <ul>
+                  <li>html</li>
+                  <li>css</li>
+                  <li>javascript</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <button class="main-btn more-btn" aria-label="show more projects">
+            show more
+          </button>
+        </section>
+        <!-- end other projects -->
+        <!-- start contact -->
+        <section class="contact" id="contact">
+          <h2 class="main-title">contact</h2>
+          <p>
+            I'm currently available to get involved in new projects, so get in
+            touch if you'd like to work together.
+          </p>
+          <p>
+            Email me at
+            <a class="contact-link" href="mailto:majidach2001@gmail.com"
+              >majidach2001@gmail.com</a
+            >
+            and let's talk about your project!
+          </p>
+        </section>
+        <!-- end contact -->
+      </main>
+      <footer>
+        <div class="footer-social">
+          <ul>
+            <li>
+              <a
+                href="https://github.com/MajidALILOUCH"
+                target="_blank"
+                aria-label="visit majid's github"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/Majid_Alilouch"
+                target="_blank"
+                aria-label="visit majid's twitter"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/majid-alilouch/"
+                target="_blank"
+                aria-label="visit majid's linkedin"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <p class="copyright">
+          &copy; 2023 - designed and built by majid alilouch
+        </p>
+      </footer>
+    </div>
+    <!-- end content -->
+    <script src="main.js"></script>
+  </body>
+</html>
