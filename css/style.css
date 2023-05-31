@@ -291,13 +291,13 @@ header nav .light-mode-toggle:hover svg {
 header nav .light-mode-toggle:focus {
   outline: 0;
 }
-header nav .light-mode-toggle .moon-icon {
+header nav .light-mode-toggle .sun-icon {
   display: none;
 }
-body.lightmode header nav .light-mode-toggle .moon-icon {
+body.lightmode header nav .light-mode-toggle .sun-icon {
   display: block;
 }
-body.lightmode header nav .light-mode-toggle .sun-icon {
+body.lightmode header nav .light-mode-toggle .moon-icon {
   display: none;
 }
 
