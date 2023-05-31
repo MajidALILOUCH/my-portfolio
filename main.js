@@ -149,3 +149,24 @@ window.onscroll = function () {
     }
   });
 };
+
+// other projects show more button
+
+// Retrieve the necessary elements
+const showMoreButton = document.getElementById("show-more-button");
+const hiddenProjects = document.querySelectorAll(".project.hidden");
+
+// Add an event listener to the "Show More" button
+showMoreButton.addEventListener("click", function () {
+  // Loop through hidden projects and toggle their visibility
+  hiddenProjects.forEach(function (project) {
+    project.classList.toggle("hidden");
+  });
+
+  // Change the button text based on the current visibility state
+  if (showMoreButton.innerText === "Show More") {
+    showMoreButton.innerText = "Show Less";
+  } else {
+    showMoreButton.innerText = "Show More";
+  }
+});

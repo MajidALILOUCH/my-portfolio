@@ -607,6 +607,9 @@ body.lightmode .work .project {
   border-radius: 10px;
   padding: 20px;
 }
+.other-projects .projects-grid .project.hidden {
+  display: none;
+}
 body.lightmode .other-projects .projects-grid .project {
   box-shadow: rgba(85, 32, 163, 0.11) 0px 0px 20px;
 }
