@@ -217,12 +217,12 @@ header nav .toggle {
   header nav ul {
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     gap: 40px;
     position: fixed;
     left: 100%;
     top: 0;
-    padding: 50px 10px;
+    padding: 50px 25px;
     width: min(75vw, 400px);
     height: 100vh;
     background-color: var(--grey-color-2);
